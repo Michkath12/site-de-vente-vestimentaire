@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - SportStyle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Barre de navigation (identique à votre page principale) -->
+    <nav>
+        <div class="logo">
+            <h1>Sport<span>Style</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#accueil">Accueil</a></li>
+            <li><a href="index.html#produits">Produits</a></li>
+            <li><a href="index.html#nouveautes">Nouveautés</a></li>
+            <li><a href="index.html#promotions">Promotions</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="connexion.html"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+
+    <!-- Section Connexion -->
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Connexion</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Se connecter</button>
+                <div class="login-links">
+                    <a href="#">Mot de passe oublié ?</a>
+                    <a href="inscription.html">Créer un compte</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page (identique à votre page principale) -->
+    <footer>
+        <!-- ... Votre footer existant ... -->
+    </footer>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Ici vous ajouterez la logique de connexion
+            alert('Fonctionnalité de connexion à implémenter !');
+        });
+    </script>
+    <!-- Ajoutez ce script avant </body> dans connexion.html -->
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Récupération des valeurs du formulaire
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Simulation de connexion réussie (à remplacer par un vrai appel API)
+            if(email && password) {
+                // Stockage des informations de l'utilisateur
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('userName', email.split('@')[0]); // Prend la partie avant @ comme nom
+                
+                // Redirection vers la page d'accueil
+                window.location.href = 'index.html';
+            } else {
+                alert('Veuillez remplir tous les champs');
+            }
+        });
+        </script>
+</body>
+</html>

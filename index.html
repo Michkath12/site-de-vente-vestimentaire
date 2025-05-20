@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportStyle - Tenues Vestimentaires & Sportives</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <div class="logo">
+            <h1>Sport<span>Style</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#produits">Produits</a></li>
+            <li><a href="#nouveautes">Nouveautés</a></li>
+            <li><a href="#promotions">Promotions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="connexion.html" id="userLink">
+                <i class="fas fa-user"></i>
+                <span id="userName"></span>
+            </a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="accueil">
+        <div class="hero-content">
+            <h2>Collection Été 2024</h2>
+            <h1>Jusqu'à -50% sur les tenues sportives</h1>
+            <a href="#produits" class="btn">Voir la collection</a>
+        </div>
+    </header>
+
+    <!-- Catégories -->
+    <section class="categories">
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80" alt="Hommes">
+            <div class="category-overlay">
+                <h3>Hommes</h3>
+                <a href="#" class="btn-small">Voir</a>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Femmes">
+            <div class="category-overlay">
+                <h3>Femmes</h3>
+                <a href="#" class="btn-small">Voir</a>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Sport">
+            <div class="category-overlay">
+                <h3>Sport</h3>
+                <a href="#" class="btn-small">Voir</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produits populaires -->
+    <section class="products" id="produits">
+        <h2 class="section-title">Nos Produits Populaires</h2>
+        <div class="product-grid">
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <div class="product-badge">Nouveau</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1259&q=80" alt="Veste Sportive">
+                </div>
+                <div class="product-details">
+                    <h3>Veste Sportive Pro</h3>
+                    <p class="product-description">Veste légère et respirante pour performances optimales</p>
+                    <div class="product-price">
+                        <span class="current-price">89,99€</span>
+                        <span class="old-price">120,00€</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-cart">Ajouter au panier</button>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <div class="product-badge">-30%</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1226&q=80" alt="Chaussures Running">
+                </div>
+                <div class="product-details">
+                    <h3>Chaussures Running Elite</h3>
+                    <p class="product-description">Amorti maximal pour les longues distances</p>
+                    <div class="product-price">
+                        <span class="current-price">129,99€</span>
+                        <span class="old-price">185,00€</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-cart">Ajouter au panier</button>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80" alt="Legging Sport">
+                </div>
+                <div class="product-details">
+                    <h3>Legging Fitness Pro</h3>
+                    <p class="product-description">Confort et liberté de mouvement</p>
+                    <div class="product-price">
+                        <span class="current-price">49,99€</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-cart">Ajouter au panier</button>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="product-card">
+                <div class="product-badge">Bestseller</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1164&q=80" alt="T-shirt Training">
+                </div>
+                <div class="product-details">
+                    <h3>T-shirt Training DryFit</h3>
+                    <p class="product-description">Technologie anti-transpiration</p>
+                    <div class="product-price">
+                        <span class="current-price">34,99€</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-cart">Ajouter au panier</button>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bannière promotionnelle -->
+    <section class="promo-banner" id="promotions">
+        <div class="promo-content">
+            <h2>Soldes d'Été</h2>
+            <h3>Jusqu'à 50% de réduction</h3>
+            <p>Sur une sélection de produits vestimentaires et accessoires</p>
+            <a href="#" class="btn">Acheter maintenant</a>
+        </div>
+    </section>
+
+    <!-- Nouveautés -->
+    <section class="new-arrivals" id="nouveautes">
+        <h2 class="section-title">Nouveautés</h2>
+        <div class="arrivals-grid">
+            <div class="arrival-card">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Nouveau Sac Sport">
+                <div class="arrival-info">
+                    <h3>Sac Sport Pro 35L</h3>
+                    <span>59,99€</span>
+                </div>
+            </div>
+            <div class="arrival-card">
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80" alt="Nouvelle Casquette">
+                <div class="arrival-info">
+                    <h3>Casquette Performance</h3>
+                    <span>24,99€</span>
+                </div>
+            </div>
+            <div class="arrival-card">
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb89e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Nouveaux Gants">
+                <div class="arrival-info">
+                    <h3>Gants de Fitness</h3>
+                    <span>29,99€</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+<section class="newsletter">
+    <div class="newsletter-content">
+        <h2>Abonnez-vous à notre newsletter</h2>
+        <p>Recevez 10% de réduction sur votre première commande et soyez informé de nos nouveautés</p>
+        <form id="newsletter-form">
+            <div class="form-group">
+                <input type="email" id="newsletter-email" placeholder="Votre email" required>
+                <span class="error-message"></span>
+            </div>
+            <button type="submit" class="btn">S'abonner</button>
+        </form>
+        <div class="success-message" style="display: none;">
+            Merci pour votre abonnement ! Un email de confirmation vous a été envoyé.
+        </div>
+    </div>
+</section>
+
+    <!-- Pied de page -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SportStyle</h3>
+                <p>Votre destination pour des tenues vestimentaires et sportives de qualité.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#nouveautes">Nouveautés</a></li>
+                    <li><a href="#promotions">Promotions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Informations</h3>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Livraison</a></li>
+                    <li><a href="#">Retours</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Rue du Sport, Paris</li>
+                    <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                    <li><i class="fas fa-envelope"></i> contact@sportstyle.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SportStyle. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const emailInput = document.getElementById('newsletter-email');
+            const errorMessage = document.querySelector('.error-message');
+            const successMessage = document.querySelector('.success-message');
+            
+            // Reset states
+            errorMessage.style.display = 'none';
+            emailInput.classList.remove('error');
+            
+            // Basic email validation
+            const email = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!emailRegex.test(email)) {
+                emailInput.classList.add('error');
+                errorMessage.textContent = 'Veuillez entrer une adresse email valide';
+                errorMessage.style.display = 'block';
+                return;
+            }
+            
+            // Here you would normally send the data to your server
+            // For demo, we'll just show the success message
+            console.log('Email submitted:', email);
+            
+            // Show success message
+            successMessage.style.display = 'block';
+            emailInput.value = '';
+            
+            // Hide form temporarily
+            this.style.display = 'none';
+            
+            // In a real app, you would submit to your backend here
+            // fetch('/subscribe', { method: 'POST', body: JSON.stringify({ email }) })
+            // .then(response => { ... })
+        });
+        </script>
+        <script>
+            // Vérifie si l'utilisateur est connecté au chargement de la page
+            document.addEventListener('DOMContentLoaded', function() {
+                const userLoggedIn = localStorage.getItem('userLoggedIn');
+                const userName = localStorage.getItem('userName');
+                const userIcon = document.getElementById('user-icon');
+                const userNameDisplay = document.getElementById('user-name-display');
+            
+                if (userLoggedIn === 'true' && userName) {
+                    // Modifie l'affichage pour montrer le nom d'utilisateur
+                    userIcon.innerHTML = `<i class="fas fa-user"></i> ${userName}`;
+                    userIcon.href = "#"; // Enlève le lien vers la page de connexion
+                    
+                    // Option: Ajoute un menu déroulant pour déconnexion
+                    userIcon.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        if (confirm('Voulez-vous vous déconnecter ?')) {
+                            localStorage.removeItem('userLoggedIn');
+                            localStorage.removeItem('userName');
+                            window.location.reload();
+                        }
+                    });
+                }
+            });
+            </script>
+            <script>
+                // Au chargement de la page
+                document.addEventListener('DOMContentLoaded', function() {
+                    const userLink = document.getElementById('userLink');
+                    const userName = document.getElementById('userName');
+                    
+                    // Vérifie si l'utilisateur est connecté
+                    if(localStorage.getItem('isLoggedIn') === 'true') {
+                        const name = localStorage.getItem('userName');
+                        if(name) {
+                            // Affiche le nom à la place de l'icône
+                            userName.textContent = name;
+                            userName.style.display = 'inline';
+                            userLink.innerHTML = `<i class="fas fa-user-circle"></i> ${name}`;
+                            
+                            // Change le lien en menu déroulant (optionnel)
+                            userLink.href = '#';
+                            userLink.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                if(confirm('Voulez-vous vous déconnecter ?')) {
+                                    localStorage.removeItem('isLoggedIn');
+                                    localStorage.removeItem('userName');
+                                    window.location.reload();
+                                }
+                            });
+                        }
+                    }
+                });
+                </script>
+</body>
+</html>
